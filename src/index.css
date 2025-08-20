@@ -49,8 +49,11 @@
 
     /* Gradients for elegant effects */
     --gradient-primary: linear-gradient(135deg, hsl(345 65% 25%), hsl(345 45% 35%));
-    --gradient-hero: linear-gradient(135deg, hsl(345 65% 25% / 0.95), hsl(222 22% 12% / 0.85));
+    --gradient-hero: linear-gradient(135deg, hsl(345 65% 25% / 0.95), hsl(345 45% 35% / 0.90), hsl(222 22% 12% / 0.85));
+    --gradient-wine: linear-gradient(135deg, hsl(345 65% 25%), hsl(345 75% 30%), hsl(15 65% 35%));
+    --gradient-wine-dark: linear-gradient(135deg, hsl(345 65% 15%), hsl(345 75% 20%), hsl(15 65% 25%));
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 10% 98%));
+    --gradient-accent: linear-gradient(90deg, hsl(345 65% 25% / 0.1), hsl(345 45% 35% / 0.05));
 
     /* Shadows for depth */
     --shadow-soft: 0 2px 8px hsl(222 22% 12% / 0.04);
@@ -131,8 +134,20 @@
     background: var(--gradient-hero);
   }
 
+  .wine-gradient {
+    background: var(--gradient-wine);
+  }
+
+  .wine-gradient-dark {
+    background: var(--gradient-wine-dark);
+  }
+
   .card-gradient {
     background: var(--gradient-card);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
   }
 
   .shadow-wine {
@@ -150,4 +165,67 @@
   .shadow-strong {
     box-shadow: var(--shadow-strong);
   }
+
+  /* Animation utilities */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+  }
+
+  .hover-wine-glow:hover {
+    box-shadow: 0 0 30px hsl(345 65% 25% / 0.4);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(345 65% 25% / 0.2); }
+  to { box-shadow: 0 0 30px hsl(345 65% 25% / 0.4); }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 }

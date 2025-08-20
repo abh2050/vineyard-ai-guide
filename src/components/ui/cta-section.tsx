@@ -1,57 +1,51 @@
-import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Section } from '@/components/ui/section';
-import { getSiteConfig } from '@/lib/data';
+import { Button } from "./button";
+import { Section } from "./section";
+import { Badge } from "./badge";
+import { ArrowRight, Sparkles } from "lucide-react";
 
-interface CTASectionProps {
-  title?: string;
-  description?: string;
-  primaryText?: string;
-  secondaryText?: string;
-  primaryHref?: string;
-  secondaryHref?: string;
-}
-
-/**
- * Call-to-action section with primary and secondary buttons
- */
-export function CTASection({
-  title = "Ready to Transform Your Winery?",
-  description = "Let's discuss how AI can improve your quality, forecast demand, and elevate guest experiences.",
-  primaryText,
-  secondaryText,
-  primaryHref = "/contact",
-  secondaryHref = "/services"
-}: CTASectionProps) {
-  const siteConfig = getSiteConfig();
-  
-  const primaryCTA = primaryText || siteConfig.cta.primary;
-  const secondaryCTA = secondaryText || siteConfig.cta.secondary;
-
+export const CTASection = () => {
   return (
-    <Section background="primary" size="lg">
-      <div className="text-center max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          {title}
+    <Section className="py-20 wine-gradient text-white relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute top-10 left-10 w-32 h-32 wine-gradient rounded-full opacity-20 animate-float" />
+      <div className="absolute bottom-10 right-10 w-24 h-24 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1s' }} />
+      <div className="absolute top-1/2 left-1/4 w-16 h-16 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '2s' }} />
+      
+      <div className="container mx-auto px-4 text-center relative z-10">
+        <Badge className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20 animate-scale-in">
+          <Sparkles className="w-4 h-4 mr-2" />
+          Ready to Transform?
+        </Badge>
+        
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
+          Start Your AI Journey Today
         </h2>
-        <p className="text-lg md:text-xl text-primary-foreground/90 mb-8">
-          {description}
+        
+        <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          Join forward-thinking wineries already using AI to enhance their operations, improve quality, and delight customers.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild size="lg" variant="secondary" className="min-w-[200px]">
-            <Link to={primaryHref} className="inline-flex items-center">
-              {primaryCTA}
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{ animationDelay: '0.4s' }}>
+          <Button 
+            size="lg" 
+            className="group bg-white text-primary hover:bg-white/90 hover-lift shadow-wine px-8 py-4 text-lg"
+          >
+            Book Your Discovery Call
+            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button asChild size="lg" variant="outline" className="min-w-[200px] border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-            <Link to={secondaryHref}>
-              {secondaryCTA}
-            </Link>
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 px-8 py-4 text-lg"
+          >
+            Download Overview
           </Button>
         </div>
+        
+        <p className="text-sm text-white/70 mt-6">
+          No commitment required • 30-minute consultation • Custom AI roadmap
+        </p>
       </div>
     </Section>
   );
-}
+};
