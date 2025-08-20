@@ -1,0 +1,49 @@
+{
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/",
+      "primary": true
+    },
+    {
+      "label": "Services", 
+      "href": "/services"
+    },
+    {
+      "label": "Solutions",
+      "href": "/solutions"
+    },
+    {
+      "label": "Case Studies",
+      "href": "/case-studies"
+    },
+    {
+      "label": "About",
+      "href": "/about"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    }
+  ],
+  "footer": {
+    "company": [
+      { "label": "About", "href": "/about" },
+      { "label": "Services", "href": "/services" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "resources": [
+      { "label": "Case Studies", "href": "/case-studies" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Solutions", "href": "/solutions" }
+    ],
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms of Service", "href": "/terms" }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "brand": {
+    "name": "AI Sommelier",
+    "tagline": "Agentic AI for wineries—from vine to visitor",
+    "description": "Practical ML systems that improve quality, forecast demand, and elevate guest experience."
+  },
+  "meta": {
+    "title": "AI Sommelier - Agentic AI for Wineries",
+    "description": "Boutique AI services for wineries. Intelligent tracking, forecasting, guest experience, and knowledge management systems built specifically for the wine industry."
+  },
+  "contact": {
+    "email": "hello@aisommelier.com",
+    "phone": "+1 (555) 123-4567",
+    "address": "San Francisco, CA"
+  },
+  "social": {
+    "linkedin": "https://linkedin.com/company/aisommelier",
+    "twitter": "https://twitter.com/aisommelier"
+  },
+  "cta": {
+    "primary": "Book a Discovery Call",
+    "secondary": "See Our Services",
+    "tertiary": "Download Overview"
+  },
+  "whyItWorks": [
+    {
+      "title": "Data-Driven",
+      "description": "Every recommendation backed by real production data, guest behavior, and industry insights.",
+      "icon": "bar-chart-3"
+    },
+    {
+      "title": "Agentic Automation", 
+      "description": "AI agents that learn your processes and make intelligent decisions while keeping humans in control.",
+      "icon": "cpu"
+    },
+    {
+      "title": "Human-in-the-Loop",
+      "description": "Technology enhances your expertise rather than replacing it. Full oversight and control maintained.",
+      "icon": "users"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+[
+  {
+    "id": "ai-trackers",
+    "title": "Intelligent AI Trackers",
+    "summary": "Real-time ML for vineyard & production quality with anomaly alerts and vision checks.",
+    "icon": "brain-circuit",
+    "problems": [
+      "Manual quality monitoring misses early issues",
+      "Production anomalies discovered too late",
+      "Inconsistent visual inspection of labels and bottles",
+      "Labor-intensive vineyard monitoring"
+    ],
+    "deliverables": [
+      "Computer vision systems for defect detection",
+      "ML models for vineyard sensor data analysis",
+      "Real-time anomaly detection alerts",
+      "Automated quality scoring systems",
+      "Integration with existing production workflows"
+    ],
+    "pilot": "Start with label inspection automation for one production line. Deploy vision models to catch printing defects and alignment issues in real-time.",
+    "outcomes": [
+      "85% reduction in manual inspection time",
+      "40% fewer defective products reaching market",
+      "Early detection of equipment issues",
+      "Consistent quality standards across batches"
+    ]
+  },
+  {
+    "id": "forecasting",
+    "title": "Quality & Marketing Forecasting",
+    "summary": "Predict scores, demand, and price bands—then align campaigns.",
+    "icon": "trending-up",
+    "problems": [
+      "Unpredictable demand leads to overstock or shortages",
+      "Pricing decisions based on gut feel",
+      "Marketing campaigns miss optimal timing",
+      "Quality scoring inconsistencies affect brand reputation"
+    ],
+    "deliverables": [
+      "Demand forecasting models with seasonal patterns",
+      "Dynamic pricing intelligence based on market data",
+      "Predictive quality scoring for new vintages",
+      "Campaign optimization recommendations",
+      "ROI tracking for marketing initiatives"
+    ],
+    "pilot": "Implement demand forecasting for your top 3 wine varieties over the next quarter, starting with historical sales analysis.",
+    "outcomes": [
+      "25% improvement in inventory turnover",
+      "15% increase in profit margins",
+      "30% better campaign conversion rates",
+      "Reduced waste from overproduction"
+    ]
+  },
+  {
+    "id": "ai-familiars",
+    "title": "Interactive AI Familiars",
+    "summary": "Digital sommeliers for pairing, wine club concierge, and brand storytelling.",
+    "icon": "message-circle",
+    "problems": [
+      "Limited sommelier availability for customer questions",
+      "Wine club members need personalized attention",
+      "Brand stories aren't consistently communicated",
+      "Pairing recommendations vary by staff knowledge"
+    ],
+    "deliverables": [
+      "Conversational AI for wine pairing recommendations",
+      "Wine club concierge chatbot with purchase history",
+      "Brand storytelling voice assistant for tasting rooms",
+      "Multilingual support for international visitors",
+      "Integration with POS and customer management systems"
+    ],
+    "pilot": "Deploy a wine pairing chatbot on your website with knowledge of your current portfolio and basic food pairing principles.",
+    "outcomes": [
+      "60% of customer questions handled automatically",
+      "35% increase in wine club engagement",
+      "Consistent brand messaging across touchpoints",
+      "24/7 customer support availability"
+    ]
+  },
+  {
+    "id": "enotourism",
+    "title": "Enotourism & Guest Experience",
+    "summary": "Personalized itineraries, virtual tasting notes, and engagement analytics.",
+    "icon": "map",
+    "problems": [
+      "Generic tasting experiences don't match guest preferences",
+      "Limited tracking of visitor engagement and satisfaction",
+      "Difficulty creating memorable, personalized experiences",
+      "No data-driven insights for experience optimization"
+    ],
+    "deliverables": [
+      "Personalized tasting itinerary generation",
+      "AR-enhanced tasting notes and vineyard information",
+      "Real-time engagement tracking and analytics",
+      "Automated follow-up and retention campaigns",
+      "Integration with booking and CRM systems"
+    ],
+    "pilot": "Create personalized tasting experiences for VIP guests using preference surveys and automated itinerary generation.",
+    "outcomes": [
+      "45% increase in guest satisfaction scores",
+      "30% higher conversion to wine club membership",
+      "Detailed analytics on visitor preferences",
+      "Streamlined experience planning process"
+    ]
+  },
+  {
+    "id": "rag-knowledge",
+    "title": "RAG Inventory & Knowledge Management",
+    "summary": "Ask anything about inventory, SOPs, compliance docs—get trusted answers.",
+    "icon": "database",
+    "problems": [
+      "Staff can't quickly find inventory information",
+      "Compliance documents buried in filing systems",
+      "SOPs inconsistently followed or hard to access",
+      "Distributor portal requests consume staff time"
+    ],
+    "deliverables": [
+      "Natural language inventory query system",
+      "AI-powered compliance document search",
+      "Conversational access to standard operating procedures",
+      "Automated distributor portal with smart responses",
+      "Knowledge base that learns from staff interactions"
+    ],
+    "pilot": "Implement inventory Q&A system for your tasting room staff, starting with current stock levels and wine specifications.",
+    "outcomes": [
+      "70% faster information retrieval",
+      "95% reduction in compliance documentation search time",
+      "Consistent SOP adherence across teams",
+      "Self-service distributor portal reduces admin workload"
+    ]
+  }
+]

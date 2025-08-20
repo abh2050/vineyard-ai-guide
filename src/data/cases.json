@@ -1,0 +1,34 @@
+[
+  {
+    "id": "case-1",
+    "title": "Quality Control Transformation",
+    "client": "Confidential Premium Winery",
+    "problem": "A 150-acre premium winery was losing $200K annually due to late-detected production issues and inconsistent quality control across three production lines.",
+    "approach": "Deployed computer vision systems for real-time bottle inspection and ML models to predict quality issues from fermentation data, integrated with existing production management software.",
+    "impact": "Reduced quality control costs by 60%, eliminated late-stage waste, and improved consistency ratings by 35% across all product lines within 6 months.",
+    "metrics": {
+      "costReduction": "60%",
+      "wasteElimination": "200K",
+      "qualityImprovement": "35%",
+      "timeline": "6 months"
+    },
+    "quote": "The AI system caught issues we never would have seen until it was too late. It's like having a master winemaker watching every step of our process 24/7.",
+    "category": "Quality Control"
+  },
+  {
+    "id": "case-2",
+    "title": "Guest Experience Revolution",
+    "client": "Confidential Estate Winery",
+    "problem": "A boutique winery struggled to provide personalized experiences for 15,000+ annual visitors while maintaining intimate, high-touch service standards.",
+    "approach": "Implemented AI-driven guest profiling, personalized tasting recommendations, and automated follow-up systems integrated with their reservation and POS platforms.",
+    "impact": "Increased wine club conversion by 40%, doubled average purchase per visit, and achieved 95% guest satisfaction scores while reducing staff workload.",
+    "metrics": {
+      "conversionIncrease": "40%",
+      "purchaseIncrease": "2x",
+      "satisfactionScore": "95%",
+      "timeline": "4 months"
+    },
+    "quote": "Our guests feel like we know them personally, even on their first visit. The AI helps us deliver the intimate experience they expect from a boutique winery.",
+    "category": "Guest Experience"
+  }
+]

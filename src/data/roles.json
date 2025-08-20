@@ -1,0 +1,44 @@
+[
+  {
+    "id": "winemaker",
+    "title": "Winemaker",
+    "description": "Focus on quality, consistency, and production optimization",
+    "pains": [
+      "Manual quality monitoring is time-consuming and inconsistent",
+      "Difficulty predicting optimal harvest timing",
+      "Production anomalies discovered too late in the process",
+      "Inconsistent documentation of winemaking decisions",
+      "Challenges maintaining quality standards across vintages"
+    ],
+    "recommendedServiceIds": ["ai-trackers", "forecasting", "rag-knowledge"],
+    "primaryColor": "emerald"
+  },
+  {
+    "id": "marketing-tasting",
+    "title": "Marketing & Tasting Room",
+    "description": "Drive sales, enhance customer experience, and build brand loyalty",
+    "pains": [
+      "Difficulty personalizing experiences for diverse guests",
+      "Limited insights into customer preferences and behavior",
+      "Inconsistent brand messaging across staff",
+      "Challenge keeping up with wine pairing questions",
+      "Managing wine club member expectations and engagement"
+    ],
+    "recommendedServiceIds": ["ai-familiars", "enotourism", "forecasting"],
+    "primaryColor": "rose"
+  },
+  {
+    "id": "operations",
+    "title": "Operations",
+    "description": "Streamline processes, manage inventory, and ensure compliance",
+    "pains": [
+      "Manual inventory tracking leads to stock issues",
+      "Compliance documentation is scattered and hard to access",
+      "Staff training on SOPs is inconsistent",
+      "Distributor inquiries consume significant staff time",
+      "Demand forecasting relies on guesswork"
+    ],
+    "recommendedServiceIds": ["rag-knowledge", "forecasting", "ai-trackers"],
+    "primaryColor": "blue"
+  }
+]
