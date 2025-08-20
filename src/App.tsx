@@ -20,7 +20,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/vineyard-ai-guide">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
