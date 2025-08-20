@@ -16,12 +16,17 @@ export default function Solutions() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section size="lg">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute top-10 right-10 w-32 h-32 wine-gradient rounded-full opacity-20 animate-float" />
+        <div className="absolute bottom-10 left-10 w-24 h-24 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/3 left-1/2 w-16 h-16 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '2s' }} />
+        
+        <div className="text-center max-w-3xl mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
             Solutions by Role
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Discover how AI can address your specific challenges, whether you're focused on 
             winemaking, operations, or guest experience.
           </p>
@@ -29,7 +34,7 @@ export default function Solutions() {
       </Section>
 
       {/* Role-Based Solutions */}
-      <Section background="muted" size="xl">
+      <Section className="py-20 bg-gradient-to-br from-muted/30 to-background" size="xl">
         <Tabs defaultValue={roles[0]?.id} className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-8">
             {roles.map((role) => (

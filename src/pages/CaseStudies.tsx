@@ -16,12 +16,17 @@ export default function CaseStudies() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section size="lg">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute top-20 left-20 w-28 h-28 wine-gradient rounded-full opacity-20 animate-float" />
+        <div className="absolute bottom-20 right-20 w-20 h-20 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 right-1/3 w-14 h-14 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '2.5s' }} />
+        
+        <div className="text-center max-w-3xl mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
             Success Stories
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             See how wineries are transforming their operations with AI. 
             Real results from real implementations.
           </p>
@@ -29,7 +34,7 @@ export default function CaseStudies() {
       </Section>
 
       {/* Case Studies Grid */}
-      <Section background="muted" size="xl">
+      <Section className="py-20 bg-gradient-to-br from-muted/30 to-background" size="xl">
         <div className="grid lg:grid-cols-2 gap-8">
           {caseStudies.map((caseStudy) => (
             <Card key={caseStudy.id} className="card-gradient shadow-medium h-full">
@@ -116,15 +121,15 @@ export default function CaseStudies() {
       </Section>
 
       {/* CTA Section */}
-      <Section background="primary">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Write Your Success Story?
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8">
             Join the wineries already transforming their operations with AI.
           </p>
-          <Button asChild size="lg" variant="secondary" className="min-w-[200px]">
+          <Button asChild size="lg" className="min-w-[200px] bg-white text-primary hover:bg-white/90">
             <Link to="/contact" className="inline-flex items-center">
               Start Your Journey
               <ArrowRight className="ml-2 h-5 w-5" />

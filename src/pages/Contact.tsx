@@ -75,12 +75,17 @@ export default function Contact() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section size="lg">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute top-15 right-15 w-26 h-26 wine-gradient rounded-full opacity-20 animate-float" />
+        <div className="absolute bottom-15 left-15 w-22 h-22 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1.8s' }} />
+        <div className="absolute top-2/3 left-2/3 w-16 h-16 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '3s' }} />
+        
+        <div className="text-center max-w-3xl mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
             Let's Discuss Your AI Journey
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Ready to explore how AI can transform your winery? 
             Let's start with a conversation about your specific needs and goals.
           </p>
@@ -88,7 +93,7 @@ export default function Contact() {
       </Section>
 
       {/* Contact Content */}
-      <Section background="muted" size="xl">
+      <Section className="py-20 bg-gradient-to-br from-muted/30 to-background" size="xl">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <Card className="card-gradient shadow-strong">

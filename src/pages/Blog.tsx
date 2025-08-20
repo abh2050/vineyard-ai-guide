@@ -43,12 +43,17 @@ export default function Blog() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section size="lg">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute top-12 right-12 w-30 h-30 wine-gradient rounded-full opacity-20 animate-float" />
+        <div className="absolute bottom-12 left-12 w-26 h-26 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1.4s' }} />
+        <div className="absolute top-1/2 left-1/3 w-20 h-20 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '2.6s' }} />
+        
+        <div className="text-center max-w-3xl mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
             Insights & Expertise
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Practical insights on AI implementation, industry trends, and success stories 
             from the intersection of technology and winemaking.
           </p>
@@ -56,11 +61,11 @@ export default function Blog() {
       </Section>
 
       {/* Blog Posts */}
-      <Section background="muted" size="xl">
+      <Section className="py-20 bg-gradient-to-br from-muted/30 to-background" size="xl">
         <div className="max-w-4xl mx-auto">
           <div className="grid gap-8">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="card-gradient shadow-medium hover:shadow-wine transition-all duration-300">
+              <Card key={post.id} className="card-gradient shadow-wine hover:shadow-strong hover-wine-glow transition-all duration-300 hover-lift">
                 <CardContent className="pt-6">
                   <div className="flex flex-wrap items-center gap-2 mb-4">
                     <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full">

@@ -12,19 +12,24 @@ export default function About() {
   return (
     <Layout>
       {/* Hero Section */}
-      <Section size="lg">
-        <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute top-10 left-1/4 w-24 h-24 wine-gradient rounded-full opacity-20 animate-float" />
+        <div className="absolute bottom-10 right-1/4 w-32 h-32 wine-gradient rounded-full opacity-30 animate-float" style={{ animationDelay: '1.2s' }} />
+        <div className="absolute top-1/3 right-10 w-18 h-18 wine-gradient rounded-full opacity-25 animate-float" style={{ animationDelay: '2.8s' }} />
+        
+        <div className="text-center max-w-3xl mx-auto relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">
             About AI Sommelier
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Bridging the gap between cutting-edge AI technology and the timeless craft of winemaking.
           </p>
         </div>
       </Section>
 
       {/* Founder Profile */}
-      <Section background="muted" size="xl">
+      <Section className="py-20 bg-gradient-to-br from-muted/30 to-background" size="xl">
         <div className="max-w-4xl mx-auto">
           <Card className="card-gradient shadow-strong">
             <CardContent className="pt-8">
@@ -159,20 +164,20 @@ export default function About() {
       </Section>
 
       {/* Mission */}
-      <Section background="primary">
+      <Section className="wine-gradient text-white py-20 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Our Mission
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8">
+          <p className="text-lg md:text-xl text-white/90 mb-8">
             To help wineries embrace AI thoughtfully and successfully, preserving the artistry 
             of winemaking while unlocking new levels of quality, efficiency, and guest experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="min-w-[200px]">
+            <Button asChild size="lg" className="min-w-[200px] bg-white text-primary hover:bg-white/90">
               <Link to="/contact">Start a Conversation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="min-w-[200px] border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="min-w-[200px] border-white/20 text-white hover:bg-white/10 hover:border-white/50">
               <Link to="/services">Explore Services</Link>
             </Button>
           </div>
