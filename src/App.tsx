@@ -15,8 +15,8 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Get the basename from environment - same logic as vite.config.ts
-const basename = import.meta.env.PROD ? "/vineyard-ai-guide" : "/";
+// Get the basename from environment - use empty for production with relative paths
+const basename = import.meta.env.PROD ? "" : "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
