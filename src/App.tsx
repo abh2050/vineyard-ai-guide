@@ -15,8 +15,10 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-// Get the basename from environment - use empty for production with relative paths
-const basename = import.meta.env.PROD ? "" : "/";
+// Derive a proper pathname for basename from Vite's BASE_URL
+// - If base is "./", this evaluates to "/"
+// - If base is "/repo-name/", this evaluates to "/repo-name/"
+const basename = new URL(import.meta.env.BASE_URL, window.location.origin).pathname;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
